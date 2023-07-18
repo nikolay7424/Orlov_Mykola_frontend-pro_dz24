@@ -286,7 +286,9 @@ function modalValidator(e) {
                         return
                     }
                 } 
-            } if(e.target.type === 'text' && e.target.value.length > 20) {
+            } if(e.keyCode === 8) {
+
+            } else if(e.target.type === 'text' && e.target.value.length > 20) {
                 e.preventDefault()
                 return
             }
